@@ -1,0 +1,5 @@
+/*Excel functions*/
+
+=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE([@CellPhone],"(",""),")",""),"-","")," ",""),"'","")
+=TRIM(RIGHT(SUBSTITUTE(E2,",",REPT(" ",100)),100))
+=LEFT(E2,FIND(",",E2)-1)
